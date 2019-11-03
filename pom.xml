@@ -95,20 +95,20 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
-                <configuration>
-                    <mainClass>com.thunder.bot.Run</mainClass>
-                    <arguments>
-                        <argument>argument1</argument>
-                    </arguments>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>1.2.1</version>
+                    <configuration>
+                        <mainClass>Run</mainClass>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+
+
 
 </project>

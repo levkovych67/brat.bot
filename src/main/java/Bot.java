@@ -12,8 +12,8 @@ import java.util.Set;
 public class Bot extends TelegramLongPollingBot {
 
     private static final String TOKEN = "921151128:AAE9wBqilZRbBOj7HTe8vsNe9kW7AxTb1Tg";
-    private static final Integer vid_pause = 2;
-    private static final Integer pic_pause = 2;
+    private static final Integer vid_pause = 3;
+    private static final Integer pic_pause = 3;
 
     private static final String NAME = "BratBratokBratishkaBot";
     private static Set<Channel> listeners = new HashSet<>();
@@ -25,9 +25,9 @@ public class Bot extends TelegramLongPollingBot {
             if(command.equals("/start")){
                 execute(new SendMessage()
                         .setChatId(update.getMessage().getChatId())
-                        .setText("Насипаю"));
+                        .setText("Loading 2ch library, you will receive random content every " + vid_pause + " minutes"));
                 listeners.add(new Channel(String.valueOf(update.getMessage().getChatId())));
-                System.out.println("NEW LISTENER : " +
+                sendLog("NEW LISTENER : " +
                         update.getMessage().getFrom().toString() + " ");
             } else if (command.equals("/stop")){
                 execute(new SendMessage()
