@@ -25,7 +25,7 @@ public class Bot extends TelegramLongPollingBot {
             if(command.equals("/start")){
                 execute(new SendMessage()
                         .setChatId(update.getMessage().getChatId())
-                        .setText("Loading 2ch library, you will receive random content every " + vid_pause + " minutes"));
+                        .setText("Loading amoral library, you will receive random content every " + vid_pause + " minutes"));
                 listeners.add(new Channel(String.valueOf(update.getMessage().getChatId())));
                 sendLog("NEW LISTENER : " +
                         update.getMessage().getFrom().toString() + " ");
