@@ -14,6 +14,7 @@ public class Bot extends TelegramLongPollingBot {
     private static final String TOKEN = "921151128:AAE9wBqilZRbBOj7HTe8vsNe9kW7AxTb1Tg";
     private static final Integer vid_pause = 2;
     private static final Integer pic_pause = 2;
+
     private static final String NAME = "BratBratokBratishkaBot";
     private static Set<Channel> listeners = new HashSet<>();
 
